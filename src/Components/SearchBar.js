@@ -28,16 +28,15 @@ const SearchBar = () => {
     event.preventDefault();
     console.log("submit");
   };
-
   return (
     <form onSubmit={submitHandler}>
       <div>
         <div>
           <label>Search: </label>
-          <input type="text" value={enteredProduct} onChange={productSearchHandler}></input>
+          <input type="text" value={userInput.enteredProduct} onChange={productSearchHandler}></input>
         </div>
         <div>
-          <input type="checkbox" value={checked} onChange={productInStockHandler}></input>
+          <input type="checkbox" value={userInput.checked} onChange={productInStockHandler}></input>
           <label>Only show products in stock</label>
         </div>
         <div>
