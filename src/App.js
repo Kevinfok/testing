@@ -49,38 +49,6 @@ function App() {
     },
   ];
 
-  /* function groupBy(objectArray, property) {
-    return objectArray.reduce(function (acc, obj) {
-      let key = obj[property]
-      if (!acc[key]) {
-        acc[key] = []
-      }
-      acc[key].push(obj)
-      return acc
-    }, {})
-  }*/
-
-  /*  const testFunction =()=>{
-    console.log("testingFunction");
-  };*/
-
-  /*const sortedProduct = Product.reduce((acc, curr) => {
-    const { category } = curr;
-    const objInAcc = acc.find((o) => o.category === category);
-    if (objInAcc) 
-    objInAcc.data.push(curr);
-    else 
-    acc.push({ category: category, data: [curr] });
-    return acc;
-  }, []);
-*/
-  //console.log(sortedProduct);
-
-  //const sortedProduct = groupBy(Product,'category');
-
-  //console.log({sortedProduct});
-  //console.log(Product[0]);
-  //console.log(sortedProduct['Electronics']);
   return (
     <div>
       <FilterableProductTable Product={Product} />

@@ -14,7 +14,4 @@ const ProductGrid = (props) => {
     </div>
   );
 };
-
 export default ProductGrid;
-
-//<ProductCategoryRow Product={props.Product}/>

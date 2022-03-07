@@ -30,7 +30,6 @@ const SearchBar = (props) => {
 
     console.log(submitData);
     props.onSubmitData(submitData);
- //   setUserInput({enteredProduct: '', checked: false});
   };
   return (
     <form onSubmit={submitHandler}>

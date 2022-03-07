@@ -1,11 +1,8 @@
 import ProductGrid from "./ProductGrid";
 
-
 const ProductTable = (props) => {
-  //console.log("test");
-
   const listItems = props.ProductList.map((listItem) => (
-    <ProductGrid Product={listItem} key ={listItem.category}/>
+    <ProductGrid Product={listItem} key={listItem.category} />
   ));
   return (
     <div className="">
@@ -15,4 +12,3 @@ const ProductTable = (props) => {
   );
 };
 export default ProductTable;
-//  <TestingComponent/>
